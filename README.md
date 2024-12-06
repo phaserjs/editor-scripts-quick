@@ -29,6 +29,8 @@ As you can see, this library depends on the `@phaserjs/editor-scripts-base` libr
 
 * Get the files in the [browser](./browser/) folder and copy them into your JavaScript project. It includes Phaser Editor files and JavaScript files.
 
+**Note:** Since this project has a dependency on the `@phaserjs/editor-scripts-base` library, the generated `phaserjs_editor_scripts_quick` folder must be placed next to the `phaserjs_editor_scripts_base` folder in order for the relative imports to resolve properly.
+
 ## Summary
 
 The scripts split in groups:
@@ -141,7 +143,7 @@ You can create variants of the **RootScript** and use different keys.
 
 ### On General Event
 
-An event script node. It registers to the given `eventEmitter` and listens to the given `eventName``. When the event is fired, it executes the children's action nodes. 
+An event script node. It registers to the given `eventEmitter` and listens to the given `eventName``. When the event is fired, it executes the children's action nodes.
 
 You can create handy prefab variants for different events, like the **On Pointer Down Event** prefab.
 
@@ -229,25 +231,25 @@ This action allows the **Action Target Config** component.
 
 ### Set Angle Action
 
-An action to set the given **Angle** to the game object. 
+An action to set the given **Angle** to the game object.
 
 This action allows the **Action Target Config** component.
 
 ### Set Scale X/Y Action
 
-An action to set the given **X** or **Y** to the game object. 
+An action to set the given **X** or **Y** to the game object.
 
 This action allows the **Action Target Config** component.
 
 ### Set Flip Action
 
-An action to set flip the game object. It looks into the **Flip Vertical** and **Flip Horizontal** properties. 
+An action to set flip the game object. It looks into the **Flip Vertical** and **Flip Horizontal** properties.
 
 This action allows the **Action Target Config** component.
 
 ### Spawn Object Action
 
-This action creates an instance of the given **Object Prefab** and adds it to the world. If the **Spawn In Parent Position** parameter is checked, then it sets the position of the new object to the same position as the script's game object. 
+This action creates an instance of the given **Object Prefab** and adds it to the world. If the **Spawn In Parent Position** parameter is checked, then it sets the position of the new object to the same position as the script's game object.
 
 Finally, it executes the children nodes and passes the new object as the first argument.
 
@@ -270,7 +272,7 @@ The actions:
 * **Make Object Collider Action** - Creates a physics collider with the game object.
 * **Set Body Enable Action** - To enable/disable physics in the game object.
 * **Start Flip With Velocity Action** - Starts flipping the game object heading to the velocity vector.
-* **Start Follow Pointer Action** - Starts moving the game object toward the pointer position. 
+* **Start Follow Pointer Action** - Starts moving the game object toward the pointer position.
 * **If Body Touching** - A conditional action to test if the body touching state.
 
 The base classes:
@@ -402,7 +404,7 @@ When the animation completes, the script executes the children's scripts.
 
 This action allows the **Action Target Config** user component.
 
-### Push Action 
+### Push Action
 
 *Class: `PushActionScript`*
 
@@ -523,7 +525,7 @@ You can configure the duration of the effect by adding the [Duration Config](htt
 
 This action runs the [Flash effect](https://newdocs.phaser.io/docs/3.70.0/focus/Phaser.Cameras.Scene2D.Camera-flash) of the camera.
 
-You can tweak the effect by setting the **Color** property. 
+You can tweak the effect by setting the **Color** property.
 
 You can configure the duration of the effect by adding the [Duration Config](https://github.com/PhaserEditor2D/phasereditor2d-scripts-simple-animations#duration-config) component of the `@phaserjs/editor-scripts-simple-animations` library.
 
@@ -533,7 +535,7 @@ You can configure the duration of the effect by adding the [Duration Config](htt
 
 This action runs the [Fade effect](https://newdocs.phaser.io/docs/3.70.0/focus/Phaser.Cameras.Scene2D.Camera-fade) of the camera.
 
-You can tweak the effect by setting the **Color** and **Fade Direction** properties. 
+You can tweak the effect by setting the **Color** and **Fade Direction** properties.
 
 You can configure the duration of the effect by adding the [Duration Config](https://github.com/PhaserEditor2D/phasereditor2d-scripts-simple-animations#duration-config) component of the `@phaserjs/editor-scripts-simple-animations` library.
 
@@ -574,7 +576,7 @@ The configuration components:
 
 This action sets a random X value to the game object. It requires that you add to this node one of the random configuration components.
 
-It allows 
+It allows
 
 ### Set Random Y Action
 
@@ -598,7 +600,7 @@ This user component contains the parameters for picking a random number from an 
 
 ## Timer Group
 
-This library provides a few actions for implementing timers in your game. 
+This library provides a few actions for implementing timers in your game.
 
 As a reminder, an action is executed by an event script or another action.
 

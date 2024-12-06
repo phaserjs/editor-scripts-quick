@@ -56,6 +56,9 @@ function processJSFiles(fromFolder, toFolder) {
 			const importRegex = /from "([^"]+)"/g;
 
 			content = content.replace(importRegex, (match, p1) => {
+				if (p1 === '@phaserjs/editor-scripts-base') {
+					return `from "../../phaserjs_editor_scripts_base/index.js"`;
+				}
 				return `from "${p1}.js"`;
 			});
 

@@ -1,6 +1,6 @@
 // You can write more code here
 /* START OF COMPILED CODE */
-import { ScriptNode } from "@phaserjs/editor-scripts-base.js";
+import { ScriptNode } from "../../phaserjs_editor_scripts_base/index.js";
 import ExecChildrenActionScript from "../core/ExecChildrenActionScript.js";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
