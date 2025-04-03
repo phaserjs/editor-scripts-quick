@@ -1,6 +1,6 @@
 // You can write more code here
 /* START OF COMPILED CODE */
-import { ScriptNode } from "@phaserjs/editor-scripts-base.js";
+import { ScriptNode } from "../../phaserjs_editor_scripts_base/index.js";
 /* START-USER-IMPORTS */
 import DurationConfigComp from "./DurationConfigComp.js";
 import EaseConfigComp from "./EaseConfigComp.js";
