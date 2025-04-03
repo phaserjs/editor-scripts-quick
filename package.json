@@ -27,8 +27,8 @@
 	"author": "Phaser Editor",
 	"license": "MIT",
 	"devDependencies": {
-		"@phaserjs/editor-scripts-base": "^1.0.0",
-		"phaser": "^3.85.2",
+		"@phaserjs/editor-scripts-base": "^2.0.1",
+		"phaser": "^4.0.0-rc.1",
 		"typescript": "^5.2.2"
 	}
 }
