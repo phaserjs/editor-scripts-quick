@@ -1,3 +1,7 @@
+## v2.0.1
+
+- Phaser 4 import fix.
+
 ## v2.0.0
 
 - Phaser 4 support.
