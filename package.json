@@ -1,6 +1,6 @@
 {
 	"name": "@phaserjs/editor-scripts-quick",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "A library of Phaser Editor scripts to boost productivity.",
 	"main": "out/index.js",
 	"types": "types/index.d.ts",
