@@ -1,6 +1,6 @@
-/// <reference types="./phaser" />
 import OnEventScript from "../core/OnEventScript";
 import { ScriptNode } from "@phaserjs/editor-scripts-base";
+import Phaser from "phaser";
 export default class OnWorldBoundsCollideEventScript extends OnEventScript {
     constructor(parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.Scene);
     up: boolean;

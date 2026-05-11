@@ -4,6 +4,7 @@
 /* START OF COMPILED CODE */
 
 import { ScriptNode } from "@phaserjs/editor-scripts-base";
+import Phaser from "phaser";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -17,7 +18,7 @@ export default class EmitEventActionScript extends ScriptNode {
 		/* END-USER-CTR-CODE */
 	}
 
-	public eventName: string = "";
+	public eventName!: string;
 	public eventEmitter: "game.events"|"scene.events"|"scene.loader"|"scene.input"|"scene.input.keyboard"|"scene.anims"|"gameObject" = "gameObject";
 
 	/* START-USER-CODE */

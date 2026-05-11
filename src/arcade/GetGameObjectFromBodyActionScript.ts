@@ -4,6 +4,7 @@
 /* START OF COMPILED CODE */
 
 import { ScriptNode } from "@phaserjs/editor-scripts-base";
+import Phaser from "phaser";
 import { ActionTargetComp } from "@phaserjs/editor-scripts-base";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */

@@ -4,6 +4,7 @@
 /* START OF COMPILED CODE */
 
 import { ScriptNode } from "@phaserjs/editor-scripts-base";
+import Phaser from "phaser";
 /* START-USER-IMPORTS */
 import DurationConfigComp from "./DurationConfigComp";
 /* END-USER-IMPORTS */

@@ -9,7 +9,7 @@ export default class OnEventScript extends ScriptNode {
         /* START-USER-CTR-CODE */
         /* END-USER-CTR-CODE */
     }
-    eventName = "";
+    eventName;
     eventEmitter = "gameObject";
     once = false;
     /* START-USER-CODE */

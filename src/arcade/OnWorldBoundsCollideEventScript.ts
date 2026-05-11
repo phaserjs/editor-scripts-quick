@@ -5,6 +5,7 @@
 
 import OnEventScript from "../core/OnEventScript";
 import { ScriptNode } from "@phaserjs/editor-scripts-base";
+import Phaser from "phaser";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 

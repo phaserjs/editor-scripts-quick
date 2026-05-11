@@ -10,7 +10,7 @@ export default class EmitEventActionScript extends ScriptNode {
         // Write your code here.
         /* END-USER-CTR-CODE */
     }
-    eventName = "";
+    eventName;
     eventEmitter = "gameObject";
     /* START-USER-CODE */
     execute(...args) {

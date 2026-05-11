@@ -52,8 +52,11 @@ function processJSFiles(fromFolder, toFolder) {
 		} else if (endsWith(file, ".js") && file !== "index.js") {
 
 			let content = fs.readFileSync(from, "utf8");
+			const phaserImportRegex = /^import Phaser from "phaser";\r?\n?/m;
 
 			const importRegex = /from "([^"]+)"/g;
+
+			content = content.replace(phaserImportRegex, "");
 
 			content = content.replace(importRegex, (match, p1) => {
 				if (p1 === '@phaserjs/editor-scripts-base') {
